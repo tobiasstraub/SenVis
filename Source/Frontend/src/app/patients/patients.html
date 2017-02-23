@@ -1,0 +1,29 @@
+<div class="table">
+
+  <h1>Patientenübersicht</h1>
+
+  <table width="100%" class="table">
+    <thead>
+    <tr>
+      <th>Vorname</th>
+      <th>Nachname</th>
+      <th>Gewicht</th>
+      <th>Geburtstag</th>
+      <th>Geschlecht</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="patient in Patients" ng-click="redirectToPatientDetail(patient.id)">
+      <td>{{patient.firstname}}</td>
+      <td>{{patient.lastname}}</td>
+      <td>{{patient.weight/1000}} kg</td>
+      <td><mydate>{{patient.birthday * 1000 | date:'dd.MM.yyyy'}}</mydate></td>
+      <td>{{patient.sex | maleFemaleFilter}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+</div>

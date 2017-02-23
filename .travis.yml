@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "5"
+before_script:
+  - cd Source/Frontend
+  - npm install
+  - npm install gulp
+  - npm install bower
+  - bower install
+script: gulp test
