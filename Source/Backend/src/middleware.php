@@ -1,7 +1,7 @@
 <?php
 // Application middleware
 
-$app->add(new \Slim\Middleware\HttpBasicAuthentication([
+/*$app->add(new \Slim\Middleware\HttpBasicAuthentication([
     "secure" => false,
     "users" => [
         "username" => 'base64Password'
@@ -12,7 +12,7 @@ $app->add(new \Slim\Middleware\HttpBasicAuthentication([
         $data["message"] = $arguments["message"];
         return $response->write(json_encode($data, JSON_UNESCAPED_SLASHES));
     }
-]));
+]));*/
 
 // Access-Control-Allow-Methods
 // Options
